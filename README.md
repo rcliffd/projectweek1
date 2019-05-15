@@ -16,6 +16,6 @@ Rene and Ben will work on the front end.
 
 Ashleigh and Connor on the back end.
 
-Rich will do API research and AJAX.
+Rich will do API research and AJAX. GitHub Manager.
 
 Possible APIs: Spotify and/or DiscCog and YouTube and/or BandsInTown
