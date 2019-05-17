@@ -4,9 +4,428 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>This Is Rene's Branch. Do Not Touch</title>
+    <title>Music Search Project</title>
+
+    <!--Boostrap link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Roboto" rel="stylesheet"> 
+
+<!--Javascript-->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src=""></script>
 </head>
+
+<!-- END HEAD SECTION -->
+
 <body>
+
+    <!-- HEADER -->
+
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container text-center">
+                <h1 class="display-4">Chugga Chugga, Choo Choo</h1>
+                <p class="lead">All Aboard Yall, All Aboard...</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container pb-5">
+        <div class="card">
+            <div class="card-header">Add Train</div>
+            <div class="col p-4">
+                <form>
+                <div class="container" id="con1">
+                    <form>
+                    <div class="form-group">
+                        <label>Train Name</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <button type="submit" class="btn" id="submitBtn">Submit</button>
+                    </form>
+                </div>
+                </form>                
+            </div>
+        </div>
+    </div>
+
+    <div class="container pb-5">
+        <div class="card">
+            <div class="card-header">Band Info</div>
+            <div class="col p-4">
+            <div class="row">
+                <div class="col-4" id="col-1">
+                    <div class="row">
+                        <div class="col" id="name-col">
+                            <h2 id="band-name">Band Name Here</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col" id="img-col">
+                            <img src="https://via.placeholder.com/200" id="band-img">
+                        </div>
+                    </div>
+                </div>
+            <div class="col-8" id="col-2">
+                <div class="row">
+                    <div class="col" id="bio-col">
+                        <h2>Band Bio</h2>
+                        <p id="band-bio">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam doloribus laboriosam natus et porro molestiae praesentium! Voluptates quas optio pariatur facere, magnam harum maiores sapiente iusto quibusdam. Unde, dolorem cumque!</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col" id="discog-col">
+                        <h2>Band Discography</h2>
+                        <ul class="list-group">
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Morbi leo risus</li>
+                            <li class="list-group-item">Porta ac consectetur ac</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+
+
+
+        <div class="container pb-5">
+                <div class="card">
+                        <div class="card-header">Band Info</div>
+                        <div class="col p-4">
+<!-- Grid row -->
+<div class="row">
+
+        <!-- Grid column -->
+        <div class="col-lg-4 col-md-12 mb-4">
+      
+          <!--Modal: Name-->
+          <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+      
+              <!--Content-->
+              <div class="modal-content">
+      
+                <!--Body-->
+                <div class="modal-body mb-0 p-0">
+      
+                  <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/A3PDXmYoF5U"
+                      allowfullscreen></iframe>
+                  </div>
+      
+                </div>
+      
+                <!--Footer-->
+                <div class="modal-footer justify-content-center">
+                  <span class="mr-4">Spread the word!</span>
+                  <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
+                  <!--Twitter-->
+                  <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
+                  <!--Google +-->
+                  <a type="button" class="btn-floating btn-sm btn-gplus"><i class="fab fa-google-plus-g"></i></a>
+                  <!--Linkedin-->
+                  <a type="button" class="btn-floating btn-sm btn-ins"><i class="fab fa-linkedin-in"></i></a>
+      
+                  <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+      
+                </div>
+      
+              </div>
+              <!--/.Content-->
+      
+            </div>
+          </div>
+          <!--Modal: Name-->
+      
+          <a><img class="img-fluid z-depth-1" src="https://mdbootstrap.com/img/screens/yt/screen-video-1.jpg" alt="video"
+              data-toggle="modal" data-target="#modal1"></a>
+      
+        </div>
+        <!-- Grid column -->
+      
+        <!-- Grid column -->
+        <div class="col-lg-4 col-md-6 mb-4">
+      
+          <!--Modal: Name-->
+          <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+      
+              <!--Content-->
+              <div class="modal-content">
+      
+                <!--Body-->
+                <div class="modal-body mb-0 p-0">
+      
+                  <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wTcNtgA6gHs"
+                      allowfullscreen></iframe>
+                  </div>
+      
+                </div>
+      
+                <!--Footer-->
+                <div class="modal-footer justify-content-center">
+                  <span class="mr-4">Spread the word!</span>
+                  <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
+                  <!--Twitter-->
+                  <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
+                  <!--Google +-->
+                  <a type="button" class="btn-floating btn-sm btn-gplus"><i class="fab fa-google-plus-g"></i></a>
+                  <!--Linkedin-->
+                  <a type="button" class="btn-floating btn-sm btn-ins"><i class="fab fa-linkedin-in"></i></a>
+      
+                  <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+      
+                </div>
+      
+              </div>
+              <!--/.Content-->
+      
+            </div>
+          </div>
+          <!--Modal: Name-->
+      
+          <a><img class="img-fluid z-depth-1" src="https://mdbootstrap.com/img/screens/yt/screen-video-2.jpg" alt="video"
+              data-toggle="modal" data-target="#modal6"></a>
+      
+        </div>
+        <!-- Grid column -->
+      
+        <!-- Grid column -->
+        <div class="col-lg-4 col-md-6 mb-4">
+      
+          <!--Modal: Name-->
+          <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+      
+              <!--Content-->
+              <div class="modal-content">
+      
+                <!--Body-->
+                <div class="modal-body mb-0 p-0">
+      
+                  <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vlDzYIIOYmM"
+                      allowfullscreen></iframe>
+                  </div>
+      
+                </div>
+      
+                <!--Footer-->
+                <div class="modal-footer justify-content-center">
+                  <span class="mr-4">Spread the word!</span>
+                  <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
+                  <!--Twitter-->
+                  <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
+                  <!--Google +-->
+                  <a type="button" class="btn-floating btn-sm btn-gplus"><i class="fab fa-google-plus-g"></i></a>
+                  <!--Linkedin-->
+                  <a type="button" class="btn-floating btn-sm btn-ins"><i class="fab fa-linkedin-in"></i></a>
+      
+                  <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+      
+                </div>
+      
+              </div>
+              <!--/.Content-->
+      
+            </div>
+          </div>
+          <!--Modal: Name-->
+      
+          <a><img class="img-fluid z-depth-1" src="https://mdbootstrap.com/img/screens/yt/screen-video-3.jpg" alt="video"
+              data-toggle="modal" data-target="#modal4"></a>
+      
+        </div>
+        <!-- Grid column -->
+      
+      </div>
+      <!-- Grid row -->
+      <!-- Grid row -->
+<div class="row">
+
+        <!-- Grid column -->
+        <div class="col-lg-4 col-md-12 mb-4">
+      
+          <!--Modal: Name-->
+          <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+      
+              <!--Content-->
+              <div class="modal-content">
+      
+                <!--Body-->
+                <div class="modal-body mb-0 p-0">
+      
+                  <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                    <iframe class="embed-responsive-item" id="iframe" src="https://www.youtube.com/embed/A3PDXmYoF5U"
+                      allowfullscreen></iframe>
+                  </div>
+      
+                </div>
+      
+                <!--Footer-->
+                <div class="modal-footer justify-content-center">
+                  <span class="mr-4">Spread the word!</span>
+                  <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
+                  <!--Twitter-->
+                  <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
+                  <!--Google +-->
+                  <a type="button" class="btn-floating btn-sm btn-gplus"><i class="fab fa-google-plus-g"></i></a>
+                  <!--Linkedin-->
+                  <a type="button" class="btn-floating btn-sm btn-ins"><i class="fab fa-linkedin-in"></i></a>
+      
+                  <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+      
+                </div>
+      
+              </div>
+              <!--/.Content-->
+      
+            </div>
+          </div>
+          <!--Modal: Name-->
+      
+          <a><img class="img-fluid z-depth-1" src="https://mdbootstrap.com/img/screens/yt/screen-video-1.jpg" alt="video"
+              data-toggle="modal" data-target="#modal1"></a>
+      
+        </div>
+        <!-- Grid column -->
+      
+        <!-- Grid column -->
+        <div class="col-lg-4 col-md-6 mb-4">
+      
+          <!--Modal: Name-->
+          <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+      
+              <!--Content-->
+              <div class="modal-content">
+      
+                <!--Body-->
+                <div class="modal-body mb-0 p-0">
+      
+                  <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wTcNtgA6gHs"
+                      allowfullscreen></iframe>
+                  </div>
+      
+                </div>
+      
+                <!--Footer-->
+                <div class="modal-footer justify-content-center">
+                  <span class="mr-4">Spread the word!</span>
+                  <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
+                  <!--Twitter-->
+                  <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
+                  <!--Google +-->
+                  <a type="button" class="btn-floating btn-sm btn-gplus"><i class="fab fa-google-plus-g"></i></a>
+                  <!--Linkedin-->
+                  <a type="button" class="btn-floating btn-sm btn-ins"><i class="fab fa-linkedin-in"></i></a>
+      
+                  <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+      
+                </div>
+      
+              </div>
+              <!--/.Content-->
+      
+            </div>
+          </div>
+          <!--Modal: Name-->
+      
+          <a><img class="img-fluid z-depth-1" src="https://mdbootstrap.com/img/screens/yt/screen-video-2.jpg" alt="video"
+              data-toggle="modal" data-target="#modal6"></a>
+      
+        </div>
+        <!-- Grid column -->
+      
+        <!-- Grid column -->
+        <div class="col-lg-4 col-md-6 mb-4">
+      
+          <!--Modal: Name-->
+          <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+      
+              <!--Content-->
+              <div class="modal-content">
+      
+                <!--Body-->
+                <div class="modal-body mb-0 p-0">
+      
+                  <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vlDzYIIOYmM"
+                      allowfullscreen></iframe>
+                  </div>
+      
+                </div>
+      
+                <!--Footer-->
+                <div class="modal-footer justify-content-center">
+                  <span class="mr-4">Spread the word!</span>
+                  <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
+                  <!--Twitter-->
+                  <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
+                  <!--Google +-->
+                  <a type="button" class="btn-floating btn-sm btn-gplus"><i class="fab fa-google-plus-g"></i></a>
+                  <!--Linkedin-->
+                  <a type="button" class="btn-floating btn-sm btn-ins"><i class="fab fa-linkedin-in"></i></a>
+      
+                  <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+      
+                </div>
+      
+              </div>
+              <!--/.Content-->
+      
+            </div>
+          </div>
+          <!--Modal: Name-->
+      
+          <a><img class="img-fluid z-depth-1" src="https://mdbootstrap.com/img/screens/yt/screen-video-3.jpg" alt="video"
+              data-toggle="modal" data-target="#modal4"></a>
+      
+        </div>
+        <!-- Grid column -->
+      
+      </div>
+      <!-- Grid row -->
+    </div>
+            </div>
+        </div>
+        <script>
+$('#modal1').on('hidden.bs.modal', function (e) {
+  // do something...
+  $('#modal1 iframe').attr("src", $("#modal1 iframe").attr("src"));
+});
+
+$('#modal6').on('hidden.bs.modal', function (e) {
+  // do something...
+  $('#modal6 iframe').attr("src", $("#modal6 iframe").attr("src"));
+});
+
+$('#modal4').on('hidden.bs.modal', function (e) {
+  // do something...
+  $('#modal4 iframe').attr("src", $("#modal4 iframe").attr("src"));
+});
+
+        </script>
+
+
+      
+      <!-- END HTML ELEMENTS -->
     
 </body>
 </html>
