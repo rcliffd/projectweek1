@@ -4,16 +4,416 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>This Is Rene's Branch. Do Not Touch</title>
-    
+
+    <title>Tunafy or Die</title>
+
+<!--Boostrap & CSS links-->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+<!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Roboto" rel="stylesheet"> 
+
+<!--Bootstrap Javascript-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!-- jQuery CDN -->
+    <script
+			  src="http://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+        
+<!-- Javascript -->
+
 </head>
 
+<!-- END HEAD SECTION -->
 
+
+<!-- BODY SECTION -->
 
 <body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
- 
 
-    <script src="app.js"></script>
+<!-- HEADER -->
+
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container text-center">
+                <h1 class="display-4">TUNAFY</h1>
+                <p class="lead">Search and find content on all your favorite artists</p>
+            </div>
+        </div>
+    </div>
+
+<!-- SEARCH DIV -->
+
+    <div class="container pb-5">
+        <div class="row">
+            <div class="col p-4" id="con1">
+                <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Enter Band Name Here" id="searchName">
+                </div>
+                <button type="submit" class="btn" id="submitBtn">Search</button>
+                </form>              
+            </div>
+        </div>
+    </div>
+
+
+<!-- RESULTS DIV -->
+
+    <div class="container pb-5">
+        <div class="card">
+            <div class="card-header" id="gifMessage"></div> <!-- ADD RANDOM MESSAGE ABOUT GIF SEARCH HERE -->
+            <div class="col p-4" id="gifContainer"> <!-- ADD GIF SEARCH RESULTS HERE -->
+
+            </div>
+        </div>
+    </div>
+
+
+<!-- VIDEO DIV -->
+    <div class="container pb-5">
+        <div class="card">
+            <div class="card-header"></div>  <!-- ADD RANDOM MESSAGE ABOUT VIDEO SEARCH HERE -->
+            <div class="col p-4">
+                <!-- Grid row -->
+                <div class="row">
+
+                    <!-- VIDEO 1 Grid column -->
+                    <div class="col-lg-4 col-md-12 mb-4">
+                        <!--Modal: Name-->
+                        <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document"> <!-- CHANGE ID TO ADD NEW VIDEO-->                                      
+                                <!--Content-->
+                                <div class="modal-content">                                        
+                                    <!--Body-->
+                                    <div class="modal-body mb-0 p-0">                                        
+                                      <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                        <iframe class="embed-responsive-item" id="vid-1" src="https://www.youtube.com/embed/A3PDXmYoF5U"
+                                          allowfullscreen></iframe> <!-- VIDEO. CHANGE URL IN FINAL-->
+                                      </div>                                        
+                                    </div>                                        
+                                    <!--Footer Close Button-->
+                                    <div class="modal-footer justify-content-center">                       
+                                      <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>     
+                                    </div>                                        
+                                </div>
+                                <!--/.Content-->                                        
+                            </div>
+                        </div>
+                        <!--/.Modal: Name-->
+                                        
+                        <!-- PLACEHOLDER IMAGE. REPLACE URL & ALT TEXT FOR FINAL-->
+                        <a><img class="img-fluid z-depth-1" id="img-1" src="https://mdbootstrap.com/img/screens/yt/screen-video-1.jpg" alt="video"
+                            data-toggle="modal" data-target="#modal1"></a>                                        
+                    </div>
+                    <!-- Grid column -->
+                                        
+                    <!-- VIDEO 2 Grid column -->
+                    <div class="col-lg-4 col-md-6 mb-4">                  
+                        <!--Modal: Name-->
+                        <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">  <!-- CHANGE ID TO ADD NEW VIDEO-->                      
+                                <!--Content-->
+                                <div class="modal-content">                        
+                                    <!--Body-->
+                                    <div class="modal-body mb-0 p-0">                          
+                                        <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                          <iframe class="embed-responsive-item" id="vid-2" src="https://www.youtube.com/embed/wTcNtgA6gHs"
+                                            allowfullscreen></iframe> <!-- VIDEO. CHANGE URL IN FINAL-->
+                                        </div>                          
+                                    </div>                          
+                                    <!--Footer Close Button-->
+                                    <div class="modal-footer justify-content-center">                           
+                                        <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>                        
+                                    </div>                        
+                                </div>
+                                <!--/.Content-->                      
+                            </div>
+                        </div>
+
+                        <!-- PLACEHOLDER IMAGE. REPLACE URL & ALT TEXT FOR FINAL-->                 
+                        <a><img class="img-fluid z-depth-1" id="img-2" src="https://mdbootstrap.com/img/screens/yt/screen-video-2.jpg" alt="video"
+                            data-toggle="modal" data-target="#modal6"></a>              
+                    </div>
+                    <!-- Grid column -->
+                                        
+                    <!-- Video 3 Grid column -->
+                    <div class="col-lg-4 col-md-6 mb-4">                  
+                        <!--Modal: Name-->
+                        <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">   <!-- CHANGE ID TO ADD NEW VIDEO-->                     
+                                <!--Content-->
+                                <div class="modal-content">                        
+                                    <!--Body-->
+                                    <div class="modal-body mb-0 p-0">                          
+                                      <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                        <iframe class="embed-responsive-item" id="vid-3" src="https://www.youtube.com/embed/vlDzYIIOYmM"
+                                          allowfullscreen></iframe> <!-- VIDEO. CHANGE URL IN FINAL-->
+                                      </div>                          
+                                    </div>                          
+                                    <!--Footer Close Button-->
+                                    <div class="modal-footer justify-content-center">                       
+                                      <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>                          
+                                    </div>                      
+                                </div>
+                                <!--/.Content-->                      
+                            </div>
+                        </div>
+
+                        <!-- PLACEHOLDER IMAGE. REPLACE URL & ALT TEXT FOR FINAL-->                  
+                        <a><img class="img-fluid z-depth-1" id="img-3" src="https://mdbootstrap.com/img/screens/yt/screen-video-3.jpg" alt="video"
+                            data-toggle="modal" data-target="#modal4"></a>                  
+                    </div>
+                    <!-- /. Grid column -->
+
+                </div>
+                <!-- /.Grid row -->
+
+                <!-- Grid row -->
+                <div class="row">
+
+                    <!-- VIDEO 4 Grid column -->
+                    <div class="col-lg-4 col-md-12 mb-4">
+                        <!--Modal: Name-->
+                        <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document"> <!-- CHANGE ID TO ADD NEW VIDEO-->                                      
+                                <!--Content-->
+                                <div class="modal-content">                                        
+                                    <!--Body-->
+                                    <div class="modal-body mb-0 p-0">                                        
+                                      <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                        <iframe class="embed-responsive-item" id="vid-4" src="https://www.youtube.com/embed/A3PDXmYoF5U"
+                                          allowfullscreen></iframe> <!-- VIDEO. CHANGE URL IN FINAL-->
+                                      </div>                                        
+                                    </div>                                        
+                                    <!--Footer Close Button-->
+                                    <div class="modal-footer justify-content-center">                       
+                                      <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>     
+                                    </div>                                        
+                                </div>
+                                <!--/.Content-->                                        
+                            </div>
+                        </div>
+                        <!--/.Modal: Name-->
+                                        
+                        <!-- PLACEHOLDER IMAGE. REPLACE URL & ALT TEXT FOR FINAL-->
+                        <a><img class="img-fluid z-depth-1" id="img-4" src="https://mdbootstrap.com/img/screens/yt/screen-video-1.jpg" alt="video"
+                            data-toggle="modal" data-target="#modal1"></a>                                        
+                    </div>
+                    <!-- Grid column -->
+                                        
+                    <!-- VIDEO 5 Grid column -->
+                    <div class="col-lg-4 col-md-6 mb-4">                  
+                        <!--Modal: Name-->
+                        <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">  <!-- CHANGE ID TO ADD NEW VIDEO-->                      
+                                <!--Content-->
+                                <div class="modal-content">                        
+                                    <!--Body-->
+                                    <div class="modal-body mb-0 p-0">                          
+                                        <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                          <iframe class="embed-responsive-item" id="vid-5" src="https://www.youtube.com/embed/wTcNtgA6gHs"
+                                            allowfullscreen></iframe> <!-- VIDEO. CHANGE URL IN FINAL-->
+                                        </div>                          
+                                    </div>                          
+                                    <!--Footer Close Button-->
+                                    <div class="modal-footer justify-content-center">                           
+                                        <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>                        
+                                    </div>                        
+                                </div>
+                                <!--/.Content-->                      
+                            </div>
+                        </div>
+
+                        <!-- PLACEHOLDER IMAGE. REPLACE URL & ALT TEXT FOR FINAL-->                 
+                        <a><img class="img-fluid z-depth-1" id="img-5" src="https://mdbootstrap.com/img/screens/yt/screen-video-2.jpg" alt="video"
+                            data-toggle="modal" data-target="#modal6"></a>              
+                    </div>
+                    <!-- Grid column -->
+                                        
+                    <!-- Video 6 Grid column -->
+                    <div class="col-lg-4 col-md-6 mb-4">                  
+                        <!--Modal: Name-->
+                        <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">   <!-- CHANGE ID TO ADD NEW VIDEO-->                     
+                                <!--Content-->
+                                <div class="modal-content">                        
+                                    <!--Body-->
+                                    <div class="modal-body mb-0 p-0">                          
+                                      <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                        <iframe class="embed-responsive-item" id="vid-6" src="https://www.youtube.com/embed/vlDzYIIOYmM"
+                                          allowfullscreen></iframe> <!-- VIDEO. CHANGE URL IN FINAL-->
+                                      </div>                          
+                                    </div>                          
+                                    <!--Footer Close Button-->
+                                    <div class="modal-footer justify-content-center">                       
+                                      <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>                          
+                                    </div>                      
+                                </div>
+                                <!--/.Content-->                      
+                            </div>
+                        </div>
+
+                        <!-- PLACEHOLDER IMAGE. REPLACE URL & ALT TEXT FOR FINAL-->                  
+                        <a><img class="img-fluid z-depth-1" id="img-6" src="https://mdbootstrap.com/img/screens/yt/screen-video-3.jpg" alt="video"
+                            data-toggle="modal" data-target="#modal4"></a>                  
+                    </div>
+                    <!-- /. Grid column -->
+
+                </div>
+                <!-- /.Grid row -->
+
+                <!-- Grid row -->
+                <div class="row">
+
+                    <!-- VIDEO 7 Grid column -->
+                    <div class="col-lg-4 col-md-12 mb-4">
+                        <!--Modal: Name-->
+                        <div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document"> <!-- CHANGE ID TO ADD NEW VIDEO-->                                      
+                                <!--Content-->
+                                <div class="modal-content">                                        
+                                    <!--Body-->
+                                    <div class="modal-body mb-0 p-0">                                        
+                                      <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                        <iframe class="embed-responsive-item" id="vid-7" src="https://www.youtube.com/embed/A3PDXmYoF5U"
+                                          allowfullscreen></iframe> <!-- VIDEO. CHANGE URL IN FINAL-->
+                                      </div>                                        
+                                    </div>                                        
+                                    <!--Footer Close Button-->
+                                    <div class="modal-footer justify-content-center">                       
+                                      <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>     
+                                    </div>                                        
+                                </div>
+                                <!--/.Content-->                                        
+                            </div>
+                        </div>
+                        <!--/.Modal: Name-->
+                                        
+                        <!-- PLACEHOLDER IMAGE. REPLACE URL & ALT TEXT FOR FINAL-->
+                        <a><img class="img-fluid z-depth-1" id="img-7" src="https://mdbootstrap.com/img/screens/yt/screen-video-1.jpg" alt="video"
+                            data-toggle="modal" data-target="#modal1"></a>                                        
+                    </div>
+                    <!-- Grid column -->
+                                        
+                    <!-- VIDEO 8 Grid column -->
+                    <div class="col-lg-4 col-md-6 mb-4">                  
+                        <!--Modal: Name-->
+                        <div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">  <!-- CHANGE ID TO ADD NEW VIDEO-->                      
+                                <!--Content-->
+                                <div class="modal-content">                        
+                                    <!--Body-->
+                                    <div class="modal-body mb-0 p-0">                          
+                                        <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                          <iframe class="embed-responsive-item" id="vid-8" src="https://www.youtube.com/embed/wTcNtgA6gHs"
+                                            allowfullscreen></iframe> <!-- VIDEO. CHANGE URL IN FINAL-->
+                                        </div>                          
+                                    </div>                          
+                                    <!--Footer Close Button-->
+                                    <div class="modal-footer justify-content-center">                           
+                                        <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>                        
+                                    </div>                        
+                                </div>
+                                <!--/.Content-->                      
+                            </div>
+                        </div>
+
+                        <!-- PLACEHOLDER IMAGE. REPLACE URL & ALT TEXT FOR FINAL-->                 
+                        <a><img class="img-fluid z-depth-1" id="img-8" src="https://mdbootstrap.com/img/screens/yt/screen-video-2.jpg" alt="video"
+                            data-toggle="modal" data-target="#modal6"></a>              
+                    </div>
+                    <!-- Grid column -->
+                                        
+                    <!-- Video 9 Grid column -->
+                    <div class="col-lg-4 col-md-6 mb-4">                  
+                        <!--Modal: Name-->
+                        <div class="modal fade" id="modal9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">   <!-- CHANGE ID TO ADD NEW VIDEO-->                     
+                                <!--Content-->
+                                <div class="modal-content">                        
+                                    <!--Body-->
+                                    <div class="modal-body mb-0 p-0">                          
+                                      <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                        <iframe class="embed-responsive-item" id="vid-9" src="https://www.youtube.com/embed/vlDzYIIOYmM"
+                                          allowfullscreen></iframe> <!-- VIDEO. CHANGE URL IN FINAL-->
+                                      </div>                          
+                                    </div>                          
+                                    <!--Footer Close Button-->
+                                    <div class="modal-footer justify-content-center">                       
+                                      <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>                          
+                                    </div>                      
+                                </div>
+                                <!--/.Content-->                      
+                            </div>
+                        </div>
+
+                        <!-- PLACEHOLDER IMAGE. REPLACE URL & ALT TEXT FOR FINAL-->                  
+                        <a><img class="img-fluid z-depth-1" id="img-9" src="https://mdbootstrap.com/img/screens/yt/screen-video-3.jpg" alt="video"
+                            data-toggle="modal" data-target="#modal4"></a>                  
+                    </div>
+                    <!-- /. Grid column -->
+
+                </div>
+                <!-- /.Grid row -->
+
+            </div>
+        </div>
+    </div>
+
+
+<!-- JAVASCRIPT SECTION -->
+        <script>
+
+            // VIDEO STOPS. ONE FOR EACH VIDEO CONNECTED BY ID
+            $('#modal1').on('hidden.bs.modal', function (e) {
+              $('#modal1 iframe').attr("src", $("#modal1 iframe").attr("src"));
+            });
+
+            $('#modal2').on('hidden.bs.modal', function (e) {
+              $('#modal2 iframe').attr("src", $("#modal2 iframe").attr("src"));
+            });
+
+            $('#modal3').on('hidden.bs.modal', function (e) {
+              $('#modal3 iframe').attr("src", $("#modal3 iframe").attr("src"));
+            });
+
+            $('#modal4').on('hidden.bs.modal', function (e) {
+              $('#modal4 iframe').attr("src", $("#modal4 iframe").attr("src"));
+            });
+
+            $('#modal5').on('hidden.bs.modal', function (e) {
+              $('#modal5 iframe').attr("src", $("#modal5 iframe").attr("src"));
+            });
+
+            $('#modal6').on('hidden.bs.modal', function (e) {
+              $('#modal6 iframe').attr("src", $("#modal6 iframe").attr("src"));
+            });
+
+            $('#modal7').on('hidden.bs.modal', function (e) {
+              $('#modal7 iframe').attr("src", $("#modal7 iframe").attr("src"));
+            });
+
+            $('#modal8').on('hidden.bs.modal', function (e) {
+              $('#modal8 iframe').attr("src", $("#modal8 iframe").attr("src"));
+            });
+
+            $('#modal9').on('hidden.bs.modal', function (e) {
+              $('#modal9 iframe').attr("src", $("#modal9 iframe").attr("src"));
+            });
+
+        </script>
+
+
+      
+      <!-- END HTML ELEMENTS -->
+    
+>>>>>>> branchimus-prime
 </body>
 </html>
