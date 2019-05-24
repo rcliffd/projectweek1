@@ -1,4 +1,4 @@
-const search = 'TaylorSwift'
+
 const apiKey = 'AIzaSyCkrudrWOfe_tgbrb2Vhuyg9nWVkGRyvZc'
 const apiKey10 = "3210dee919595df6a421526e3f0a6d13"
 const url = 'https://www.googleapis.com/youtube/v3/search?part=snippet&q=' + search + '&type=video&videoEmbeddable=true&order=viewCount' + '&maxResults=25&key=' + apiKey
@@ -8,7 +8,13 @@ const url2 = "http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist="+ 
 //Get Artist TOP Tracks
 const url3 = "http://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&artist="+ search +"&api_key="+ apiKey10 +"&format=json"
 // ================== YOUTUBE API ==================== // 
+
 AOS.init();
+
+$("#submitBtn").on("click", function(event){
+  event.preventDefault();
+  var search=$("#searchName").val().trim();
+
 $.ajax({
     url: url, 
     method: 'GET'
@@ -60,7 +66,7 @@ $.ajax({
         id: 'video',
         src: videoSrc
     });
-    video.appendTo($('#videoPlayer'))
+    video.appendTo($('#vid-1'))
     var results = response;
     console.log(results.items)
     }
@@ -68,3 +74,5 @@ $.ajax({
 // Init Animations data-aos = ...
 AOS.init();
 Collapse
+
+})
