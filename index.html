@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tunafy or Die</title>
 
-<!--Boostrap & CSS links-->
-    <link rel="stylesheet" href="assets/css/reset.css">
+<!--Boostrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
 
+
+<!--CSS link-->
+    <link rel="stylesheet" type=text/css href="assets/style.css">
 
 <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Roboto" rel="stylesheet"> 
@@ -42,8 +43,17 @@
     <div class="container">
         <div class="jumbotron jumbotron-fluid">
             <div class="container text-center">
-
-                <p class="lead">Search and find content on all your favorite artists</p>
+                <h1 class="display-4">
+                    <!-- Anchor tag to link images to homescreen -->
+                    <a href="index.html">
+                    <!--Music Fish Image-->
+                    <img id="fish" src="images/fishEmoji-trans.png">
+                    <!--Tunafy Title-->
+                    <img id="tunafyTitle" src="images/logo-white.png">
+                </a>
+                </h1>
+               
+                <p id="tagline">Search and find content on all your favorite artists</p>
             </div>
         </div>
     </div>
@@ -363,16 +373,39 @@
 
 
 <!-- JAVASCRIPT SECTION -->
+
         <script>
 
             // VIDEO STOPS. ONE FOR EACH VIDEO CONNECTED BY ID
             $('#modal1').on('hidden.bs.modal', function (e) {
               $('#modal1 iframe').attr("src", $("#modal1 iframe").attr("src"));
             });
+            $('#modal2').on('hidden.bs.modal', function (e) {
+              $('#modal2 iframe').attr("src", $("#modal2 iframe").attr("src"));
+            });
+            $('#modal3').on('hidden.bs.modal', function (e) {
+              $('#modal3 iframe').attr("src", $("#modal3 iframe").attr("src"));
+            });
+            $('#modal4').on('hidden.bs.modal', function (e) {
+              $('#modal4 iframe').attr("src", $("#modal4 iframe").attr("src"));
+            });
+            $('#modal5').on('hidden.bs.modal', function (e) {
+              $('#modal5 iframe').attr("src", $("#modal5 iframe").attr("src"));
+            });
+            $('#modal6').on('hidden.bs.modal', function (e) {
+              $('#modal6 iframe').attr("src", $("#modal6 iframe").attr("src"));
+            });
+            $('#modal7').on('hidden.bs.modal', function (e) {
+              $('#modal7 iframe').attr("src", $("#modal7 iframe").attr("src"));
+            });
+            $('#modal8').on('hidden.bs.modal', function (e) {
+              $('#modal8 iframe').attr("src", $("#modal8 iframe").attr("src"));
+            });
+            $('#modal9').on('hidden.bs.modal', function (e) {
+              $('#modal9 iframe').attr("src", $("#modal9 iframe").attr("src"));
+            });
 
         </script>
-
-
       
       <!-- END HTML ELEMENTS -->
     
