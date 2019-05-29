@@ -44,8 +44,12 @@ $("#submitBtn").on("click", function (event) {
             var artist = lastFMResponse.artist.name
             var artistBio = lastFMResponse.artist.bio.summary
             console.log(artist + " " + artistBio)
-            $('#artist').append(artist)
-            $('#artistBio').append(artistBio)
+            // // var bioDiv=$("#bio");
+            // var newbioDiv=$("<div>" + artistBio + "</div>");
+            // bioDiv.append(newbioDiv)
+           
+            // $('#artist').append(artist)
+            $('#bio').append(artistBio)
         })
         // ================== Last FM API For Getting Top Tracks ==================== // 
         $.ajax({
@@ -53,12 +57,15 @@ $("#submitBtn").on("click", function (event) {
             method: 'GET'
         }).then(function (lastFMResponseTopTracks) {
             console.log(lastFMResponseTopTracks)
+            
 
             for (var a = 0; a < 10; a++) {
                 console.log(lastFMResponseTopTracks.toptracks.track[a].name)
                 console.log(lastFMResponseTopTracks.toptracks.track[a].url)
-                var topTracks = lastFMResponseTopTracks.toptracks.track[a].name
-                $('#topTracks').append(topTracks + "<br>")
+                $('#topTracks').append(lastFMResponseTopTracks.toptracks.track[a].name + "<br>")
+
+              
+
             }
         })
         for (var i = 1; i < 10; i++) {
@@ -67,7 +74,10 @@ $("#submitBtn").on("click", function (event) {
             var thumbSrc = response.items[i].snippet.thumbnails.high.url
             console.log
 
-            console.log(videoSrc)
+             
+
+            
+                console.log(videoSrc)
             const iFrame = $("#vid-" + i)
             iFrame.attr("src", videoSrc)
 
