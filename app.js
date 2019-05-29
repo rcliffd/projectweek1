@@ -1,6 +1,6 @@
-// AOS.init();
-
 $("#submitBtn").on("click", function (event) {
+    $("#gif").empty();
+    $("#topTracks").empty();
     event.preventDefault();
     var search = $("#searchName").val().trim();
 
@@ -49,7 +49,7 @@ $("#submitBtn").on("click", function (event) {
             // bioDiv.append(newbioDiv)
            
             // $('#artist').append(artist)
-            $('#bio').append(artistBio)
+            $('#bio').html(artistBio)
         })
         // ================== Last FM API For Getting Top Tracks ==================== // 
         $.ajax({
