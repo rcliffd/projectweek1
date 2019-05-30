@@ -1,6 +1,8 @@
+/* comment */
 * {
     box-sizing: border-box;
   }
+
 body {
     background: url("../images/tunafy-bg.jpg") no-repeat fixed;
     background-size: cover;
