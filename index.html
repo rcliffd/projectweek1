@@ -78,24 +78,46 @@
 
     <div class="container pb-5">
         <div class="card">
-            <div class="card-header" id="gifMessage"></div> <!-- ADD RANDOM MESSAGE ABOUT GIF SEARCH HERE -->
-            <div class="col p-4" id="gifContainer"> <!-- ADD GIF SEARCH RESULTS HERE -->
+            <div class="card-header" id="gifMessage">
+                <p id="title">
+                Biography
+                </p>
+            </div> <!-- ADD RANDOM MESSAGE ABOUT GIF SEARCH HERE -->
+            <div class="col p-4" id="bio"> 
 
             </div>
+
+         
         </div>
     </div>
+
+    <div class="container pb-5">
+            <div class="card">
+                <div class="card-header" id="gifMessage">
+                    <p id="title">
+                    Top Tracks
+                    </p>
+                </div> <!-- ADD RANDOM MESSAGE ABOUT GIF SEARCH HERE -->
+                <div class="col p-4" id="topTracks"> 
+    
+                </div>
+    
+             
+            </div>
+        </div>
+
 
 
 <!-- VIDEO DIV -->
     <div class="container pb-5">
         <div class="card">
-            <div class="card-header"></div>  <!-- ADD RANDOM MESSAGE ABOUT VIDEO SEARCH HERE -->
+            <div class="card-header" id="title">Videos</div>  <!-- ADD RANDOM MESSAGE ABOUT VIDEO SEARCH HERE -->
             <div class="col p-4">
                 <!-- Grid row -->
                 <div class="row">
 
                     <!-- VIDEO 1 Grid column -->
-                    <div class="col-lg-4 col-md-12 mb-4">
+                    <div class="col-lg-4 col-md-4 mb-4">
                         <!--Modal: Name-->
                         <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-lg" role="document"> <!-- CHANGE ID TO ADD NEW VIDEO-->                                      
@@ -125,7 +147,7 @@
                     <!-- Grid column -->
                                         
                     <!-- VIDEO 2 Grid column -->
-                    <div class="col-lg-4 col-md-6 mb-4">                  
+                    <div class="col-lg-4 col-md-4 mb-4">                  
                         <!--Modal: Name-->
                         <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-lg" role="document">  <!-- CHANGE ID TO ADD NEW VIDEO-->                      
@@ -154,7 +176,7 @@
                     <!-- Grid column -->
                                         
                     <!-- Video 3 Grid column -->
-                    <div class="col-lg-4 col-md-6 mb-4">                  
+                    <div class="col-lg-4 col-md-4 mb-4">                  
                         <!--Modal: Name-->
                         <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-lg" role="document">   <!-- CHANGE ID TO ADD NEW VIDEO-->                     
@@ -189,7 +211,7 @@
                 <div class="row">
 
                     <!-- VIDEO 4 Grid column -->
-                    <div class="col-lg-4 col-md-12 mb-4">
+                    <div class="col-lg-4 col-md-4 mb-4">
                         <!--Modal: Name-->
                         <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-lg" role="document"> <!-- CHANGE ID TO ADD NEW VIDEO-->                                      
@@ -219,7 +241,7 @@
                     <!-- Grid column -->
                                         
                     <!-- VIDEO 5 Grid column -->
-                    <div class="col-lg-4 col-md-6 mb-4">                  
+                    <div class="col-lg-4 col-md-4 mb-4">                  
                         <!--Modal: Name-->
                         <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-lg" role="document">  <!-- CHANGE ID TO ADD NEW VIDEO-->                      
@@ -248,7 +270,7 @@
                     <!-- Grid column -->
                                         
                     <!-- Video 6 Grid column -->
-                    <div class="col-lg-4 col-md-6 mb-4">                  
+                    <div class="col-lg-4 col-md-4 mb-4">                  
                         <!--Modal: Name-->
                         <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-lg" role="document">   <!-- CHANGE ID TO ADD NEW VIDEO-->                     
@@ -283,7 +305,7 @@
                 <div class="row">
 
                     <!-- VIDEO 7 Grid column -->
-                    <div class="col-lg-4 col-md-12 mb-4">
+                    <div class="col-lg-4 col-md-4 mb-4">
                         <!--Modal: Name-->
                         <div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-lg" role="document"> <!-- CHANGE ID TO ADD NEW VIDEO-->                                      
@@ -313,7 +335,7 @@
                     <!-- Grid column -->
                                         
                     <!-- VIDEO 8 Grid column -->
-                    <div class="col-lg-4 col-md-6 mb-4">                  
+                    <div class="col-lg-4 col-md-4 mb-4">                  
                         <!--Modal: Name-->
                         <div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-lg" role="document">  <!-- CHANGE ID TO ADD NEW VIDEO-->                      
@@ -342,7 +364,7 @@
                     <!-- Grid column -->
                                         
                     <!-- Video 9 Grid column -->
-                    <div class="col-lg-4 col-md-6 mb-4">                  
+                    <div class="col-lg-4 col-md-4 mb-4">                  
                         <!--Modal: Name-->
                         <div class="modal fade" id="modal9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-lg" role="document">   <!-- CHANGE ID TO ADD NEW VIDEO-->                     
@@ -377,11 +399,23 @@
         </div>
     </div>
 
+<!-- Gif Div -->
+    <div class="container pb-5">
+            <div class="card">
+                <div class="card-header" id="title">Gifs</div>
+                <div class="col p-4">
+                    <div class="row">
+                        <div class="col-lg-12" id="gif">
+            
+                        </div>
+                    </div>
+                </div> 
+            </div>
+    </div> 
 
 <!-- JAVASCRIPT SECTION -->
 
         <script>
-
             // VIDEO STOPS. ONE FOR EACH VIDEO CONNECTED BY ID
             $('#modal1').on('hidden.bs.modal', function (e) {
               $('#modal1 iframe').attr("src", $("#modal1 iframe").attr("src"));
@@ -410,8 +444,9 @@
             $('#modal9').on('hidden.bs.modal', function (e) {
               $('#modal9 iframe').attr("src", $("#modal9 iframe").attr("src"));
             });
-
         </script>
+
+        <script src=app.js></script>
       
       <!-- END HTML ELEMENTS -->
     
