@@ -79,7 +79,7 @@
     <div class="container pb-5">
         <div class="card">
             <div class="card-header" id="gifMessage">
-                <p class="artist">
+
                 Biography
                 </p>
             </div> <!-- ADD RANDOM MESSAGE ABOUT GIF SEARCH HERE -->
@@ -94,7 +94,7 @@
     <div class="container pb-5">
             <div class="card">
                 <div class="card-header" id="gifMessage">
-                    <p class="artist">
+
                     Top Tracks
                     </p>
                 </div> <!-- ADD RANDOM MESSAGE ABOUT GIF SEARCH HERE -->
@@ -111,7 +111,7 @@
 <!-- VIDEO DIV -->
     <div class="container pb-5">
         <div class="card">
-            <div class="card-header"></div>  <!-- ADD RANDOM MESSAGE ABOUT VIDEO SEARCH HERE -->
+            <div class="card-header" id="title">Videos</div>  <!-- ADD RANDOM MESSAGE ABOUT VIDEO SEARCH HERE -->
             <div class="col p-4">
                 <!-- Grid row -->
                 <div class="row">
@@ -399,12 +399,10 @@
         </div>
     </div>
 
-    <div id="gif"></div>
 
 <!-- JAVASCRIPT SECTION -->
 
         <script>
-
             // VIDEO STOPS. ONE FOR EACH VIDEO CONNECTED BY ID
             $('#modal1').on('hidden.bs.modal', function (e) {
               $('#modal1 iframe').attr("src", $("#modal1 iframe").attr("src"));
@@ -433,7 +431,6 @@
             $('#modal9').on('hidden.bs.modal', function (e) {
               $('#modal9 iframe').attr("src", $("#modal9 iframe").attr("src"));
             });
-
         </script>
 
         <script src=app.js></script>
