@@ -1,4 +1,4 @@
-# Project-Week-1
+Tunafy Music App
 
 Dream Team Project
 
